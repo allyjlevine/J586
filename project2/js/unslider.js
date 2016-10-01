@@ -113,7 +113,7 @@
 		self.$parent = null;
 		self.$container = null;
 		self.$slides = null;
-		self.$nav = [];
+		self.$nav = null;
 		self.$arrows = [];
 
 		//  Set our indexes and totals
