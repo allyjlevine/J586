@@ -46,6 +46,10 @@
     border: none
 }
 
+.unslider-nav li {
+  display: inline;
+}
+
 .unslider-arrow {
     position: absolute;
     left: 20px;
@@ -60,7 +64,7 @@
 }
 
 #teal {
-  background-color: teal;
+  background-color: blue;
   height: 500px;
 }
 

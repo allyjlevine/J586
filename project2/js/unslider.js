@@ -249,7 +249,7 @@
 			});
 
 			//  Keep a copy of the nav everywhere so we can use it
-			self.$nav = $nav.insertAfter(self.$context);
+			self.$nav = $nav.insertBefore(self.$context);
 
 			//  Now our nav is built, let's add it to the slider and bind
 			//  for any click events on the generated links
