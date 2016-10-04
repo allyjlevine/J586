@@ -43,3 +43,7 @@ p.transition {
 .white-background {
   background-color: white;
 }
+
+#m-f {
+  float: left;
+}
