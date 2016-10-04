@@ -36,6 +36,11 @@
 .unslider-fade .unslider-wrap li.unslider-active {
     z-index: 10
 }
+nav li.unslider-active {
+  background-color: blue;
+    color: white;
+    border: none;
+}
 
 .unslider li,
 .unslider ol,
@@ -48,10 +53,16 @@
 
 .unslider-nav li {
   display: inline;
+  line-height: 4;
+}
+
+.unslider-nav {
+  text-align: center;
 }
 
 .unslider-arrow {
     position: absolute;
+    top: 50%;
     left: 20px;
     z-index: 2;
     cursor: pointer
@@ -61,13 +72,4 @@
 .unslider-arrow.next {
     left: auto;
     right: 20px
-}
-
-#teal {
-  background-color: blue;
-  height: 500px;
-}
-
-#orange {
-  background-color: orange;
 }
