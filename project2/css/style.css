@@ -1,6 +1,6 @@
 body {
   font-family: "Georgia", serif;;
-  padding: 50px;
+  padding: 0 50px 50px 50px;
 }
 
 h1 {
@@ -31,7 +31,7 @@ p.transition {
 
 .unslider-nav ol {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 #chart {
