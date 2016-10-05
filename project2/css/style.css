@@ -43,6 +43,11 @@ p {
 p.transition {
   font-style: italic;
   font-size: 20px;
+  text-align: right;
+}
+
+.lawsuit p {
+  line-height: 1;
 }
 
 .unslider-nav li {
@@ -81,16 +86,16 @@ p.transition {
   width: 75%;
 }
 
-#myContainer {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  border: solid 1px;
+.lawsuit {
+  float: left;
 }
 
-#myAnimation {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: red;
+#lawsuit-container {
+  display: flex;
+  justify-content: center;
+}
+
+#lawsuit-header {
+
+  text-align: center;
 }

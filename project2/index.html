@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="newsquiz/css/style.css" rel="stylesheet" media="screen" type="text/css"> -->
     <link rel="stylesheet" href="css/unslider.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
@@ -62,15 +64,22 @@
                 <p class="transition">Chaos ensues...</p>
               </li>
               <li data-nav="Lawsuits">
-                <h1>Lawsuits</h1>
-                <p>ACLU and Lambda Legal
-                  Hunter Shafer,17
-                  Beverly Newell, 45
-                  Kelly Trent, 39
-                  Joaquin Carcaño, 27
-                  Payton McGarry, 20
-                  Angela Gilmore, 52</p>
-                  <br>
+                <h3 id="lawsuit-header">Lawsuits surrounding HB2</h3>
+                <div id="lawsuit-container">
+                <div class="lawsuit">
+                  <h2>for HB2</h2>
+                  <p>Pat McCrory</p>
+                  <p>Tim Moore</p>
+                  <p>Phil Berger</p>
+                </div>
+                <div><img id="bill" src="images/scale.svg" height="400"></div>
+                <div class="lawsuit">
+                  <h2>against</h2>
+                  <p>ACLU and Lambda Legal</p>
+                  <p>Equality NC</p>
+                  <p>U.S. Justice Department</p>
+                </div>
+              </div>
                   <p class="transition">The state has faced significant financial effects...</p>
                 </li>
                 <li data-nav="Losses" class="white-background">
@@ -80,10 +89,17 @@
                   <br>
                   <p class="transition">That is all.</p>
                 </li>
+                <!-- <li data-nav="Losses" class="white-background">
+                  <div class="container-fluid">
+                      <div id="quiz"></div>
+                  </div>
+                </li> -->
               </ul>
 
             </div>
-
+            <!-- <script src="newsquiz/js/jquery.js" type="text/javascript"></script>
+            <script src="newsquiz/js/tabletop.js" type="text/javascript"></script>
+            <script src="newsquiz/js/script.js" type="text/javascript"></script> -->
             <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
             <script src="js/unslider.js"></script>
             <script src="js/script.js"></script>
