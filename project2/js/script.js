@@ -16,19 +16,6 @@
 
 			});
 
-			function myMove() {
-			  var elem = document.getElementById("myAnimation");
-			  var pos = 130;
-			  var id = setInterval(frame, 10);
-			  function frame() {
-			    if (pos == 200) {
-			      clearInterval(id);
-			    } else {
-			      pos++;
-
-			      elem.style.left = pos + 'px';
-			    }
-			  }
-			}
+		
 
 		});
