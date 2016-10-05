@@ -99,3 +99,17 @@ p.transition {
 
   text-align: center;
 }
+
+
+@media only screen and (max-width: 400px) {
+  nav {
+    display: none;
+  }
+
+  #m-f {
+    width: 10em;
+    height: 10em;
+  }
+
+
+}
