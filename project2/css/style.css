@@ -101,15 +101,65 @@ p.transition {
 }
 
 
-@media only screen and (max-width: 400px) {
-  nav {
-    display: none;
-  }
+@media only screen and (max-width: 415px) {
 
   #m-f {
     width: 10em;
     height: 10em;
   }
+
+  #lawsuit-container {
+    display: block;
+    text-align: center;
+  }
+
+  div.my-slider {
+    margin-top: 30px;
+  }
+
+  div.illustration {
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  p.transition {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  #classes h2 {
+    display: block;
+  }
+
+  h2 {
+    margin-bottom: 7px;
+    font-size: 30px;
+  }
+
+  #bill {
+    height: 14em;
+  }
+
+  .lawsuit {
+    float: none;
+  }
+
+  .lawsuit h2 {
+    margin-right: 0;
+  }
+
+  .lawsuit p {
+    font-size: 16px;
+  }
+
+
 
 
 }

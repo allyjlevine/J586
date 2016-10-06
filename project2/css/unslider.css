@@ -73,3 +73,9 @@ nav li.unslider-active {
     left: auto;
     right: 20px
 }
+
+@media only screen and (max-width: 400px) {
+  .unslider-nav {
+    display: none;
+  }
+}
