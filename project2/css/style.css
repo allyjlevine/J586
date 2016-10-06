@@ -124,6 +124,7 @@ p.transition {
 
   p {
     margin-top: 0;
+    font-size: 20px;
   }
 
   p.transition {
@@ -159,6 +160,9 @@ p.transition {
     font-size: 16px;
   }
 
+  h1 {
+    font-size: 66px;
+  }
 
 
 
