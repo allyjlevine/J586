@@ -16,6 +16,13 @@
 
 			});
 
-		
+			$('.sliderman').unslider();
+
+//  Let's say we want to use $.getScript to load our scripts for some reason
+
+
+
+
+
 
 		});
