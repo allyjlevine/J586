@@ -6400,7 +6400,7 @@ module.exports = function(Chart) {
 				},
 				label: function(tooltipItem, data) {
 					var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
-					return 'N.C. ' + datasetLabel + tooltipItem.xLabel;
+					return 'N.C. ' + datasetLabel + tooltipItem.xLabel + ' million';
 				}
 			}
 		}
@@ -12135,25 +12135,25 @@ module.exports = function(Chart) {
 		enabled: true,
 		custom: null,
 		mode: 'single',
-		backgroundColor: 'red',
+		backgroundColor: 'white',
 		titleFontStyle: 'bold',
 		titleSpacing: 2,
 		titleMarginBottom: 6,
-		titleFontColor: 'white',
+		titleFontColor: 'black',
 		titleAlign: 'left',
 		bodySpacing: 2,
-		bodyFontColor: 'blue',
+		bodyFontColor: 'black',
 		bodyAlign: 'left',
 		footerFontStyle: 'bold',
 		footerSpacing: 2,
 		footerMarginTop: 6,
-		footerFontColor: 'blue',
+		footerFontColor: 'black',
 		footerAlign: 'left',
 		yPadding: 6,
 		xPadding: 6,
 		yAlign: 'center',
 		xAlign: 'center',
-		caretSize: 5,
+		caretSize: 0,
 		cornerRadius: 6,
 		multiKeyBackground: '#fff',
 		callbacks: {

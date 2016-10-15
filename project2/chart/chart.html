@@ -29,7 +29,7 @@
             datasets: [{
                 label: 'Lost $',
                 backgroundColor: '#2130E9',
-                data: [24000000 , 49000000 , 33000000 , 100000000 ]
+                data: [24 , 49 , 33 , 100 ]
             }]
         };
 
@@ -62,6 +62,20 @@
                         fontStyle: 900,
                         fontColor: 'black',
                         padding: 20,
+                    },
+                    scales: {
+                      xAxes: [{
+                        scaleLabel: {
+                          labelString: 'Millions of Dollars Lost',
+                          display: true,
+                        },
+                        ticks: {
+                          userCallback: function(tick) {
+                            return "$" + tick.toString();
+                          }
+                        }
+
+                      }]
                     }
 
 

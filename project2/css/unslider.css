@@ -62,10 +62,13 @@ nav li.unslider-active {
 
 .unslider-arrow {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 20px;
     z-index: 2;
-    cursor: pointer
+    cursor: pointer;
+    padding: 25% 2.5% 25% 2.5%;
+    margin-left: -2.5%;
+    margin-right: -2.5%;
 
 }
 

@@ -24,7 +24,14 @@ h2 {
   display: inline-block;
 }
 
+.vertical-center {
+  margin-top: 5%;
+}
 
+div.hor-center {
+  display: flex;
+  justify-content: center;
+}
 
 h3 {
   font-family: 'Raleway', sans-serif;
@@ -38,6 +45,8 @@ h3 {
 p {
   font-size: 24px;
   line-height: 1.5;
+  padding-right: 100px;
+  margin-top: 0px;
 }
 
 p.transition {
@@ -96,8 +105,11 @@ p.transition {
 }
 
 #lawsuit-header {
-
   text-align: center;
+}
+
+.unslider-container {
+  padding: 0em 10em;
 }
 
 
@@ -166,4 +178,10 @@ p.transition {
 
 
 
+}
+
+@media only screen and (max-width: 1150px) {
+  .unslider-container {
+    padding: 0;
+  }
 }
