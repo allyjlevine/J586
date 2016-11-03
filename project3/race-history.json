@@ -1,30 +1,3 @@
-"White": [
-  {
-    "Total": 53550,
-    "In Poverty": 9204
-  }
-]
-"Black": [
-  {
-    "Total": 11087,
-    "In Poverty": 3651
-  }
-]
-"Asian": [
-  {
-    "Total": 3786,
-    "In Poverty": 466
-  }
-]
-"Hispanic": [
-  {
-    "Total": 18231,
-    "In Poverty": 5269
-  }
-]
-
-
-/*different format*/
 "Total": [
   {
   "White": 53550,

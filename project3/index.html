@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/c3.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
@@ -18,11 +19,43 @@
     <![endif]-->
   </head>
   <body>
-    <div id="sex-chart"></div>
-    <div id="race-chart"></div>
+    <div id="pie-charts" class="row">
+      <div class="col-md-4">
+        <div id="gender-pie"></div>
+      </div>
+      <div class="col-md-4">
+        <div id="race-pie"></div>
+      </div>
+      <div class="col-md-4">
+        <div id="age-pie"></div>
+      </div>
+    </div> <!-- end pie chart row -->
+    <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/d3.min.js" charset="utf-8"></script>
     <script src="js/c3.min.js"></script>

@@ -1,24 +1,34 @@
 $(document).ready(function(){
 
-  function loadData() {
-    $.ajax({
-      method:"GET",
-      url:"race-history.json",
-      dataType:"JSON",
-      success: function(raceData) {
-        console.log("Worked!");
-        console.log(raceData);
-      }
-    })
-  }
+  $('#example').DataTable( {
+      "ajax": 'dataExample.json'
+  } );
 
-
+  loadData("education.json");
 });
 
 
+function loadData(dataURL){
 
-var sexChart = c3.generate({
-  bindto: '#sex-chart',
+  $.ajax({
+  method: "GET",
+  url: dataURL,
+  dataType: "json",
+  success: parseData
+});
+
+
+} //loadData
+
+function parseData(data){
+  
+}
+
+
+// Pie Charts
+// gender pie chart
+var genderPie = c3.generate({
+  bindto: '#gender-pie',
   data: {
     columns: [
       ['Men', 44],
@@ -28,66 +38,29 @@ var sexChart = c3.generate({
   }
 });
 
-
-
-function parseData ( ) {
-  console.log(raceData);
-}
-
-var chart = c3.generate({
-  bindto: '#race-chart',
+// race pie chart
+var racePie = c3.generate({
+  bindto: '#race-pie',
   data: {
-
-    // json: [
-    //   // white
-    //   {
-    //     "Total": 53550,
-    //     "In Poverty": 9204
-    //   },
-    //   // black
-    //   {
-    //     "Total": 11087,
-    //     "In Poverty": 3651
-    //   },
-    //   // asian
-    //   {
-    //     "Total": 3786,
-    //     "In Poverty": 466
-    //   },
-    //   // hispanic
-    //   {
-    //     "Total": 18231,
-    //     "In Poverty": 5269
-    //   }
-    // ],
-
-    keys: {
-     value: ['Total', 'In Poverty'],
-    },
-    x : 'x',
     columns: [
-      ['x','White', 'Black', 'Asian', 'Hispanic'],
-      ['Total', 53550, 11087, 3786, 18231],
-      ['In Poverty', 9204, 3651, 466, 5269],
+      ['White', 17],
+      ['Black', 35],
+      ['Asian', 17],
+      ['Hispanic', 31]
     ],
+    type: 'pie',
+  }
+});
 
-
-
-
-    type: 'bar',
-    groups: [
-      ['Total', 'In Poverty']
-    ]
-  },
-  axis: {
-        x: {
-            type: 'category'
-        },
-        rotated: true
-    },
-  grid: {
-    y: {
-      lines: [{value:0}]
-    }
+// age pie chart
+var agePie = c3.generate({
+  bindto: '#age-pie',
+  data: {
+    columns: [
+      ['Under 18', 48],
+      ['18 to 64', 30],
+      ['65 and Up', 22]
+    ],
+    type: 'pie',
   }
 });
