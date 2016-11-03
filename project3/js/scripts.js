@@ -1,3 +1,6 @@
+var data1;
+var data2;
+
 $(document).ready(function(){
 
   $('#example').DataTable( {
@@ -17,11 +20,16 @@ function loadData(dataURL){
   success: parseData
 });
 
-
-} //loadData
+} //loadData()
 
 function parseData(data){
-  
+  console.log("here");
+  buildChart();
+}
+
+function buildChart() {
+
+
 }
 
 

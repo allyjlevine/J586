@@ -1,8 +1,9 @@
-[
+{
+  "education":[
   {
     "No high school diploma": 26.3,
     "High school, no college": 12.9,
     "Some college, no degree": 9.6,
     "Bachelor's degree or higher": 4.5
   }
-] /*Education*/
+]}
