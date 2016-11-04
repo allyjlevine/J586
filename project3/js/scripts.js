@@ -72,3 +72,14 @@ var agePie = c3.generate({
     type: 'pie',
   }
 });
+
+//Line chart
+// var eduLine = c3.generate({
+//   bindto: '#edu-line',
+//   data: {
+//     columns: [
+//       ['data1', 26.3, 12.9, 9.6, 4.5]
+//     ],
+//   }
+//
+// });
