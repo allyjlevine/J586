@@ -54,9 +54,31 @@ var agePie = c3.generate({
 var eduLine = c3.generate({
   bindto: '#edu-line',
   data: {
+    x : 'x',
     columns: [
-      ['data1', 26.3, 12.9, 9.6, 4.5]
-    ],
-  }
+      ['x', 'No High School Diploma', 'High School, No College', 'Some College, No Degree', 'Bachelor Degree or Higher'],
+      ['Percent in Poverty', 26.3, 12.9, 9.6, 4.5],
+    ]
+  },
+  axis: {
+      y: {
+        label: {
+          text: 'Percent in Poverty',
+          position: 'outer-middle'
+        }
+      },
+      x: {
+        type: 'category',
+        show: true,
+        // label: {
+        //   text: 'Level of Education',
+        //   position: 'outer-middle'
+        // }
+      }
+  },
+  // size: {
+  //   width: 640,
+  //   height: 480
+  // }
 
 });

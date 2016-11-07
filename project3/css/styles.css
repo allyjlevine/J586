@@ -33,7 +33,20 @@
   margin: 30px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /*header*/
+
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+
 #header {
   text-align: center;
 }
@@ -58,6 +71,7 @@ div h1 {
 .dateline {
     font-family: 'Benton Gothic Regular', Arial, serif;
     font-size: 11px;
+    text-transform: uppercase;
 }
 
 /*body*/
@@ -71,6 +85,11 @@ div h3 {
   font-family: 'LA Web Display Kis Bold', Georgia, serif;
 }
 
+h4 {
+  font-family: 'LA Web Display Kis Bold', Georgia, serif;
+  font-size: 20px;
+}
+
 h5 {
   font-family: 'Benton Gothic Regular', Arial, serif;
   font-size: 12px;
@@ -80,6 +99,23 @@ h5 {
 /*map*/
 .amcharts-export-menu {
   display: none;
+}
+
+/*region table*/
+#regionList th {
+  font-family: 'Benton Gothic Bold', Arial, serif;
+  font-size: 15px;
+}
+
+#regionList td {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid #ddd;
+}
+
+#regionList tbody {
+  text-align: left;
 }
 
 /*data table*/

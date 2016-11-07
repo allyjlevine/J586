@@ -15,11 +15,26 @@
 </head>
 <body>
   <div class="row" id="header">
+    <div id="share-buttons">
+      <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+          <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+          <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+      </a>
+      <!-- Email -->
+      <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+          <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+      </a>
+    </div>
     <h1>Poverty in the United States</h1>
     <p class="description">
-      Take a closer look at the poverty threshold in the United States. Who are the majority of those in poverty?
-      Where do they live? The following data explores poverty by different characteristics. Race and education
-      show up as the leading factors in a person's standard of living.
+      The nation’s official poverty rate in 2015 was 13.5 percent, with 43.1 million people in poverty, 3.5 million
+      fewer than in 2014. The 1.2 percentage point decrease in the poverty rate from 2014 to 2015 represents the largest
+      annual percentage point drop in poverty since 1999. Take a closer look at the poverty threshold in the United States,
+      who they are and where they live. Race and education show up as the leading factors in a person's standard of living.
     </p>
     <p class="byline">
       By <span class="author"><a href="http://www.allyjlevine.com">Ally Levine</a></span>
@@ -28,43 +43,51 @@
         November 7, 2016
     </p>
   </div>
-  <div class="row">
+  <div class="row text-center">
     <div id="pie-charts">
       <h3>Of those in poverty...</h3>
-      <p>This is text about the pie charts</p>
+      <p>Focusing only on those in poverty, these pie charts illustrate what kinds of people make up poverty in the U.S.</p>
       <div class="col-md-4 col-xs-4">
         <h5>Gender</h5>
-        <h3>56% are female</h3>
+        <h4>56% are female</h4>
         <div id="gender-pie"></div>
       </div>
       <div class="col-md-4 col-xs-4">
         <h5>Race</h5>
-        <h3>35% are black</h3>
+        <h4>35% are black</h4>
         <div id="race-pie"></div>
       </div>
       <div class="col-md-4 col-xs-4">
         <h5>Age</h5>
-        <h3>48% are under 18 years old</h3>
+        <h4>48% are under 18 years old</h4>
         <div id="age-pie"></div>
       </div>
     </div>
   </div> <!-- end pie chart row -->
 
-  <div class="row">
+  <div class="row text-center">
     <div>
       <h3>Education</h3>
       <div id="edu-line"></div>
     </div>
   </div> <!-- end of education line chart -->
 
-  <div class="row">
-    <div class="col-md-8">
-      <div id="chartdiv"></div>
+  <div class="row text-center">
+    <div>
+      <h3>
+        Poverty by U.S. Region
+      </h3>
+      <p>
+        In 2015, the poverty rate and the number in poverty decreased in the South, West and
+        Midwest to 15.3 percent, 13.3 percent and 11.7 percent, respectively. The Northeast
+        did not experience a significant change in the poverty rate or the number in poverty between 2014 and 2015.
+      </p>
     </div>
     <div class="col-md-4">
+
       <table id="regionList">
         <tr>
-          <th>Region with Most Poverty</th>
+          <th>Most Impoverished Region of U.S.</th>
         </tr>
         <tr>
           <td>
@@ -87,6 +110,9 @@
           </td>
         </tr>
       </table>
+    </div>
+    <div class="col-md-8">
+      <div id="chartdiv"></div>
     </div>
   </div>
     <div id="dataTable">
