@@ -1,82 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/c3.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
-    <script src="ammap/ammap.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="ammap/ammap.css" type="text/css" media="all" />
-    <title>Bootstrap 101 Template</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/c3.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
+  <script src="ammap/ammap.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="ammap/ammap.css" type="text/css" media="all"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+</head>
+<body>
+  <div class="row" id="header">
+    <h1>Poverty in the United States</h1>
+    <p class="description">
+      Take a closer look at the poverty threshold in the United States. Who are the majority of those in poverty?
+      Where do they live? The following data explores poverty by different characteristics. Race and education
+      show up as the leading factors in a person's standard of living.
+    </p>
+    <p class="byline">
+      By <span class="author"><a href="http://www.allyjlevine.com">Ally Levine</a></span>
+    </p>
+    <p class="dateline">
+        November 7, 2016
+    </p>
+  </div>
+  <div class="row">
     <div id="pie-charts">
-      <h1>Of those in poverty...</h1>
-      <div class="col-md-4">
-        <h2>Gender</h2>
+      <h3>Of those in poverty...</h3>
+      <p>This is text about the pie charts</p>
+      <div class="col-md-4 col-xs-4">
+        <h5>Gender</h5>
+        <h3>56% are female</h3>
         <div id="gender-pie"></div>
       </div>
-      <div class="col-md-4">
-        <h2>Race</h2>
+      <div class="col-md-4 col-xs-4">
+        <h5>Race</h5>
+        <h3>35% are black</h3>
         <div id="race-pie"></div>
       </div>
-      <div class="col-md-4">
-        <h2>Age</h2>
+      <div class="col-md-4 col-xs-4">
+        <h5>Age</h5>
+        <h3>48% are under 18 years old</h3>
         <div id="age-pie"></div>
       </div>
-    </div> <!-- end pie chart row -->
-    <div class="col-md-4">
-      <h2>Education</h2>
+    </div>
+  </div> <!-- end pie chart row -->
+
+  <div class="row">
+    <div>
+      <h3>Education</h3>
       <div id="edu-line"></div>
     </div>
-    <div id="chartdiv"></div>
+  </div> <!-- end of education line chart -->
+
+  <div class="row">
+    <div class="col-md-8">
+      <div id="chartdiv"></div>
+    </div>
+    <div class="col-md-4">
+      <table id="regionList">
+        <tr>
+          <th>Region with Most Poverty</th>
+        </tr>
+        <tr>
+          <td>
+            1. South
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2. West
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3. North East
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4. Midwest
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
     <div id="dataTable">
-      <table id="example" class="display" cellspacing="0" width="100%">
-          <thead>
-              <tr>
-                  <th>Name</th>
-                  <th>Position</th>
-                  <th>Office</th>
-                  <th>Extn.</th>
-                  <th>Start date</th>
-                  <th>Salary</th>
-              </tr>
-          </thead>
-          <tfoot>
-              <tr>
-                  <th>Name</th>
-                  <th>Position</th>
-                  <th>Office</th>
-                  <th>Extn.</th>
-                  <th>Start date</th>
-                  <th>Salary</th>
-              </tr>
-          </tfoot>
+      <table id="allData" class="display" cellspacing="0" width="100%">
+        <thead>
+          <tr>
+            <th>Characteristic</th>
+            <th>Category</th>
+            <th>Total People (thousands)</th>
+            <th>People in Poverty (thousands)</th>
+            <th>Percent</th>
+          </tr>
+        </thead>
       </table>
     </div> <!-- end of data table -->
+    <div class="sources">
+      Sources: http://www.census.gov/topics/income-poverty/poverty/data/tables.html
+    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
-<script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-    <script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
-    <script src="ammap/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/d3.min.js" charset="utf-8"></script>
-    <script src="js/c3.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+  <script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="ammap/map.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/d3.min.js" charset="utf-8"></script>
+  <script src="js/c3.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 </html>

@@ -1,40 +1,17 @@
-var data1;
-var data2;
+$(document).ready(function() {
+    $('#allData').DataTable( {
+        "ajax": 'json/dataSummary.json',
+        "order": [[4, "desc"]],
+        "lengthChange": false,
+        "paging": false,
+        "searching": false,
+        "pageLength": 13
+    } );
+    $('#regionData').DataTable( {
+        "ajax": 'json/regionData.json',
+    } );
+} );
 
-$(document).ready(function(){
-
-  $('#example').DataTable( {
-      "ajax": 'dataExample.json'
-  } );
-
-  loadData("education.json");
-});
-
-
-function loadData(dataURL){
-
-  $.ajax({
-  method: "GET",
-  url: dataURL,
-  dataType: "json",
-  success: parseData
-});
-
-} //loadData()
-
-function parseData(data){
-  console.log("here");
-  buildChart();
-}
-
-function buildChart() {
-
-
-}
-
-
-// Pie Charts
-// gender pie chart
 var genderPie = c3.generate({
   bindto: '#gender-pie',
   data: {
@@ -74,12 +51,12 @@ var agePie = c3.generate({
 });
 
 //Line chart
-// var eduLine = c3.generate({
-//   bindto: '#edu-line',
-//   data: {
-//     columns: [
-//       ['data1', 26.3, 12.9, 9.6, 4.5]
-//     ],
-//   }
-//
-// });
+var eduLine = c3.generate({
+  bindto: '#edu-line',
+  data: {
+    columns: [
+      ['data1', 26.3, 12.9, 9.6, 4.5]
+    ],
+  }
+
+});

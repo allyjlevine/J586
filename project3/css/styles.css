@@ -1,3 +1,106 @@
-#chart-pie .c3-shapes-woman {
-  fill: blue;
+/*Fonts*/
+@font-face {
+    font-family: 'LA Web Display Kis Bold';
+    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.3.1/laheadline.eot');
+    src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.3.1/laheadline.eot?#iefix') format('embedded-opentype'),
+         url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.3.1/laheadline.woff') format('woff'),
+         url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.3.1/laheadline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benton Gothic Regular';
+  src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.eot');
+  src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.eot?#iefix') format('embedded-opentype'),
+       url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.woff') format('woff'),
+       url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-regular.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+        font-family: 'Benton Gothic Bold';
+        src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.eot');
+        src: url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.eot?#iefix') format('embedded-opentype'),
+             url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.woff') format('woff'),
+             url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.ttf') format('truetype');
+        font-weight:normal;
+        font-style:normal;
+    }
+
+.row {
+  margin: 30px;
+}
+
+/*header*/
+#header {
+  text-align: center;
+}
+
+div h1 {
+  font-family: 'LA Web Display Kis Bold', Georgia, serif;
+}
+
+.byline a {
+  color: #FF5443;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  font-size: 13px;
+}
+
+.byline {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dateline {
+    font-family: 'Benton Gothic Regular', Arial, serif;
+    font-size: 11px;
+}
+
+/*body*/
+p {
+  color: #333333;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+div h3 {
+  font-family: 'LA Web Display Kis Bold', Georgia, serif;
+}
+
+h5 {
+  font-family: 'Benton Gothic Regular', Arial, serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/*map*/
+.amcharts-export-menu {
+  display: none;
+}
+
+/*data table*/
+tbody {
+  font-family: 'Benton Gothic Regular', Arial, serif;
+  font-size: 12px;
+}
+
+thead, tfoot {
+  font-family: 'Benton Gothic Bold', Arial, serif;
+}
+
+#allData tbody tr.odd {
+  background-color: white;
+}
+
+#allData_info {
+  display: none;
+}
+
+.sources {
+    font-family: 'Benton Gothic Regular', Arial, serif;
+    font-size: 12px;
 }

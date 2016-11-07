@@ -1,0 +1,203 @@
+{
+  "statePoverty":[
+  {
+    "id": "US-AL",
+    "value": 16.3
+  },
+  {
+    "id": "US-AK",
+    "value": 9.2
+  },
+  {
+    "id": "US-AZ",
+    "value": 17.2
+  },
+  {
+    "id": "US-AR",
+    "value": 16.1
+  },
+  {
+    "id": "US-CA",
+    "value": 13.9
+  },
+  {
+    "id": "US-CO",
+    "value": 9.9
+  },
+  {
+    "id": "US-CT",
+    "value": 9.1
+  },
+  {
+    "id": "US-DE",
+    "value": 11.1
+  },
+  {
+    "id": "US-FL",
+    "value": 16.2
+  },
+  {
+    "id": "US-GA",
+    "value": 18.1
+  },
+  {
+    "id": "US-HI",
+    "value": 10.9
+  },
+  {
+    "id": "US-ID",
+    "value": 12.3
+  },
+  {
+    "id": "US-IL",
+    "value": 10.9
+  },
+  {
+    "id": "US-IN",
+    "value": 13.5
+  },
+  {
+    "id": "US-IA",
+    "value": 10.4
+  },
+  {
+    "id": "US-KS",
+    "value": 14.2
+  },
+  {
+    "id": "US-KY",
+    "value": 19.5
+  },
+  {
+    "id": "US-LA",
+    "value": 18.6
+  },
+  {
+    "id": "US-ME",
+    "value": 12.3
+  },
+  {
+    "id": "US-MD",
+    "value": 9.6
+  },
+  {
+    "id": "US-MA",
+    "value": 11.5
+  },
+  {
+    "id": "US-MI",
+    "value": 12.8
+  },
+  {
+    "id": "US-MN",
+    "value": 7.8
+  },
+  {
+    "id": "US-MS",
+    "value": 19.1
+  },
+  {
+    "id": "US-MO",
+    "value": 9.8
+  },
+  {
+    "id": "US-MT",
+    "value": 11.9
+  },
+  {
+    "id": "US-NE",
+    "value": 10.3
+  },
+  {
+    "id": "US-NV",
+    "value": 13
+  },
+  {
+    "id": "US-NH",
+    "value": 7.3
+  },
+  {
+    "id": "US-NJ",
+    "value": 11.2
+  },
+  {
+    "id": "US-NM",
+    "value": 19.7
+  },
+  {
+    "id": "US-NY",
+    "value": 14.2
+  },
+  {
+    "id": "US-NC",
+    "value": 15.3
+  },
+  {
+    "id": "US-ND",
+    "value": 10.7
+  },
+  {
+    "id": "US-OH",
+    "value": 13.6
+  },
+  {
+    "id": "US-OK",
+    "value": 14.2
+  },
+  {
+    "id": "US-OR",
+    "value": 11.9
+  },
+  {
+    "id": "US-PA",
+    "value": 12.3
+  },
+  {
+    "id": "US-RI",
+    "value": 11.8
+  },
+  {
+    "id": "US-SC",
+    "value": 14.3
+  },
+  {
+    "id": "US-SD",
+    "value": 13.9
+  },
+  {
+    "id": "US-TN",
+    "value": 14.7
+  },
+  {
+    "id": "US-TX",
+    "value": 14.7
+  },
+  {
+    "id": "US-UT",
+    "value": 9.3
+  },
+  {
+    "id": "US-VT",
+    "value": 10.7
+  },
+  {
+    "id": "US-VA",
+    "value": 10.9
+  },
+  {
+    "id": "US-WA",
+    "value": 11.4
+  },
+  {
+    "id": "US-WV",
+    "value": 14.5
+  },
+  {
+    "id": "US-WI",
+    "value": 11.4
+  },
+  {
+    "id": "US-WY",
+    "value": 9.8
+  }
+]}
