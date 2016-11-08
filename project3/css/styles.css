@@ -38,7 +38,11 @@
 }
 
 /*header*/
-
+#share-buttons .fa {
+  font-size: 20px;
+  color: black;
+  padding-right: 18px;
+}
 #share-buttons img {
   width: 35px;
   padding: 5px;
@@ -53,6 +57,10 @@
 
 div h1 {
   font-family: 'LA Web Display Kis Bold', Georgia, serif;
+}
+
+.description {
+  font-size: 13px;
 }
 
 .byline a {
@@ -83,6 +91,7 @@ p {
 
 div h3 {
   font-family: 'LA Web Display Kis Bold', Georgia, serif;
+  text-align: center;
 }
 
 h4 {
@@ -96,10 +105,20 @@ h5 {
   text-transform: uppercase;
 }
 
+/*pie charts*/
+.pie-container {
+  margin-top: 50px;
+}
+
+.c3 text {
+ font-family: 'Benton Gothic Regular', Arial, serif;
+}
+
 /*map*/
 .amcharts-export-menu {
   display: none;
 }
+
 
 /*region table*/
 #regionList th {
@@ -116,6 +135,11 @@ h5 {
 
 #regionList tbody {
   text-align: left;
+}
+
+#regionList {
+  display: flex;
+  justify-content: center;
 }
 
 /*data table*/
@@ -139,4 +163,31 @@ thead, tfoot {
 .sources {
     font-family: 'Benton Gothic Regular', Arial, serif;
     font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  body {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .pie-container {
+    margin-top: 0px;
+  }
+  h3 {
+    margin-top: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  #map {
+    margin-top: -160px;
+  }
+
 }

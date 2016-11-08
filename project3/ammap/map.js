@@ -53,14 +53,31 @@ function buildMap() {
 
     "valueLegend": {
       "right": 10,
-      "minValue": "little",
-      "maxValue": "a lot!"
+      "minValue": "7.3",
+      "maxValue": "19.7"
     },
 
     "export": {
-      "enabled": true
+      "enabled": false
+    },
+
+    "balloon": {
+    "adjustBorderColor": true,
+    "color": "#000000",
+    "fillColor": "#FFFFFF"
+    },
+
+    "zoomControl": {
+		  "zoomControlEnabled": false,
+      "homeButtonEnabled": false
+	  },
+    "areasSettings": {
+      "color": "#FFCA57"
     }
+  }
+);
 
-  } );
-
+map.balloonLabelFunction = function (povLevel, value) {
+  return povLevel.title + " " + povLevel.value + "%";
+}
 } //buildMap

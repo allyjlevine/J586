@@ -19,7 +19,10 @@ var genderPie = c3.generate({
       ['Men', 44],
       ['Women', 56]
     ],
-    type: 'pie',
+    type: 'donut',
+  },
+  color: {
+        pattern: ['#4574B1', '#AEC7E8']
   }
 });
 
@@ -33,7 +36,10 @@ var racePie = c3.generate({
       ['Asian', 17],
       ['Hispanic', 31]
     ],
-    type: 'pie',
+    type: 'donut',
+  },
+  color: {
+        pattern: ['#4574B1', '#78A6D6', '#AEC7E8', '#6390BA']
   }
 });
 
@@ -46,7 +52,10 @@ var agePie = c3.generate({
       ['18 to 64', 30],
       ['65 and Up', 22]
     ],
-    type: 'pie',
+    type: 'donut',
+  },
+  color: {
+        pattern: ['#4574B1', '#78A6D6', '#AEC7E8', '#ffbb78']
   }
 });
 
@@ -60,6 +69,9 @@ var eduLine = c3.generate({
       ['Percent in Poverty', 26.3, 12.9, 9.6, 4.5],
     ]
   },
+  legend: {
+    show: false
+  },
   axis: {
       y: {
         label: {
@@ -69,16 +81,16 @@ var eduLine = c3.generate({
       },
       x: {
         type: 'category',
-        show: true,
-        // label: {
-        //   text: 'Level of Education',
-        //   position: 'outer-middle'
-        // }
+        show: true
       }
   },
-  // size: {
-  //   width: 640,
-  //   height: 480
-  // }
 
 });
+
+// var mq = window.matchMedia( "(max-width: 500px)" );
+//
+// if (mq.matches) {
+//
+// } else {
+//   // window width is less than 500px
+// }
