@@ -41,6 +41,7 @@
   max-width: 600px;
   text-align: left;
   margin: auto;
+  margin-bottom: 45px;
 }
 
 /*header*/
@@ -97,6 +98,7 @@ p {
 
 div h3 {
   font-family: 'LA Web Display Kis Bold', Georgia, serif;
+  margin-top: 125px;
   /*text-align: center;*/
 }
 
@@ -152,6 +154,14 @@ h5 {
 #regionList {
   display: flex;
   justify-content: center;
+}
+
+/*education*/
+#quote {
+  font-family: 'Benton Gothic Bold', Arial, serif;
+  font-size: 25px;
+  margin-top: 120px;
+  text-align: center;
 }
 
 /*data table*/
