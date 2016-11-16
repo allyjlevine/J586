@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="ammap/ammap.css" type="text/css" media="all"/>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <title>Bootstrap 101 Template</title>
+  <title>Poverty in the U.S.</title>
 
 </head>
 <body>
@@ -32,7 +32,7 @@
       </a>
     </div>
     <h1>Poverty in the United States</h1>
-    <p class="description">
+    <p class="description" class="wide-margins">
       The nation’s official poverty rate in 2015 was 13.5 percent, with 43.1 million people in poverty, 3.5 million
       fewer than in 2014. The 1.2 percentage point decrease in the poverty rate from 2014 to 2015 represents the largest
       annual percentage point drop in poverty since 1999. Take a closer look at the poverty threshold in the United States,
@@ -55,30 +55,32 @@
 
   <!-- pie charts -->
   <div class="row text-center">
-    <div id="pie-charts">
+    <div>
       <h3>Of those in poverty...</h3>
       <!-- <p>Focusing only on those in poverty, these pie charts illustrate what kinds of people make up poverty in the U.S.</p> -->
-      <div class="col-sm-4 pie-container">
-        <h5>Gender</h5>
-        <h4>56% are female</h4>
-        <div id="gender-pie"></div>
-      </div>
-      <div class="col-sm-4 pie-container">
-        <h5>Race</h5>
-        <h4>35% are black</h4>
-        <div id="race-pie"></div>
-      </div>
-      <div class="col-sm-4 pie-container">
-        <h5>Age</h5>
-        <h4>48% are under 18 years old</h4>
-        <div id="age-pie"></div>
+      <div id="pie-charts">
+        <div class="col-sm-4 pie-container">
+          <h5>Gender</h5>
+          <h4>56% are female</h4>
+          <div id="gender-pie"></div>
+        </div>
+        <div class="col-sm-4 pie-container">
+          <h5>Race</h5>
+          <h4>35% are black</h4>
+          <div id="race-pie"></div>
+        </div>
+        <div class="col-sm-4 pie-container">
+          <h5>Age</h5>
+          <h4>48% are under 18 years old</h4>
+          <div id="age-pie"></div>
+        </div>
       </div>
     </div>
   </div> <!-- end pie chart row -->
 
   <!-- Region -->
   <div class="row text-center">
-    <div>
+    <div class="wide-margins">
       <h3>
         Poverty by Region
       </h3>
@@ -125,7 +127,7 @@
   <!-- education -->
   <div class="row text-center">
     <div>
-      <h3>Education Decreases Poverty</h3>
+      <h3>Poverty by Level of Education</h3>
       <div id="edu-line"></div>
     </div>
   </div> <!-- end of education line chart -->

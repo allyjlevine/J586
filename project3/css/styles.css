@@ -37,6 +37,12 @@
   text-align: center;
 }
 
+.wide-margins {
+  max-width: 600px;
+  text-align: left;
+  margin: auto;
+}
+
 /*header*/
 #share-buttons .fa {
   font-size: 20px;
@@ -91,7 +97,7 @@ p {
 
 div h3 {
   font-family: 'LA Web Display Kis Bold', Georgia, serif;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 h4 {
@@ -113,6 +119,12 @@ h5 {
 .c3 text {
  font-family: 'Benton Gothic Regular', Arial, serif;
 }
+
+/*div #pie-charts {
+  border: solid .5px black;
+  max-width: 800px;
+  padding: 20px;
+}*/
 
 /*map*/
 .amcharts-export-menu {
