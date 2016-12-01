@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marker Clustering</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: 40, lng: -98}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = '';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "conservativeLocations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers1 = conservativeLocations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        var markers2 = liberalLocations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers1,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+        var markerCluster = new MarkerClusterer(map, markers2,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var conservativeLocations = [
+        {lat: 37.270970, lng: -79.941427},
+        {lat: 40.712784, lng: -74.005941},
+        {lat: 26.705621, lng: -80.036430},
+        {lat: 37.839333, lng: -84.270018},
+        {lat: 64.200841, lng: -149.493673},
+        {lat: 40.901765, lng: -73.519845},
+        {lat: 39.076767, lng: -77.653613},
+        {lat: 40.712784, lng: -74.005941},
+        {lat: 38.907192, lng: -77.036871},
+        {lat: 31.968599, lng: -99.901813},
+        {lat: 38.998165, lng: -77.288316},
+        // Karl Rove, DC
+        {lat: 38.907192, lng: -77.036871},
+        // Glenn Beck, Westlake TX
+        {lat: 32.991235, lng: -97.195014},
+        // Grover Norquist, DC
+        {lat: 38.907192, lng: -77.036871},
+        // Michelle Malkin, Colorado Springs
+        {lat: 38.833882, lng: -104.821363},
+        // Jim DeMint, Greenville SC
+        {lat: 34.852618, lng: -82.394010}
+      ]
+
+      var liberalLocations = [
+        // Jon Stewart, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // David Shipley, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // Thomas L. Friedman, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // Maureen Dowd, DC
+        {lat: 38.907192, lng: -77.036871},
+        // Chris Matthews, Chevy Chase, MD
+        {lat: 38.994915, lng: -77.077205},
+        // Fareed Zakaria, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // James Fallows Philadelphia, PA
+        {lat: 39.952584, lng: -75.165222},
+        // Markos Moulitsas Berkely, CA
+        {lat: 37.871593, lng: -122.272747},
+        // Michael Pollan Berkely, CA
+        {lat: 37.871593, lng: -122.272747},
+        // Arrianna Huffington, CA
+        {lat: 37.871593, lng: -122.272747},
+        // Fred Hiatt, DC
+        {lat: 38.907192, lng: -77.036871},
+        // Oprah Winfrey, Montecito, CA
+        {lat: 34.436663, lng: -119.632075},
+        // Gerald F. Seib, DC
+        {lat: 38.907192, lng: -77.036871},
+        // Ezra Klein, DC
+        {lat: 38.907192, lng: -77.036871},
+        // Kevin Drum, Irvine, CA
+        {lat: 33.683947, lng: -117.794694},
+        // Paul Krugman, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // Kurt Anderson, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // Glenn Greenwald, NYC
+        {lat: 40.712784, lng: -74.005941},
+        // Bill Moyers, Bernardsville, NJ
+        {lat: 40.718712, lng: -74.569324},
+        //Matthew Yglesias, DC
+        {lat: 38.907192, lng: -77.036871}
+      ]
+
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJxZfpwi_lMud-seX8dNXybpBICp0SWYE&callback=initMap">
+    </script>
+  </body>
+</html>

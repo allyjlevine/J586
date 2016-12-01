@@ -1,0 +1,133 @@
+/*format*/
+body {
+  width: 22em;
+  background-color: #31323D;
+  margin: 0 auto;
+}
+
+iframe {
+  height: 44em;
+  background-color: white;
+  border: none;
+}
+
+/*headline*/
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-size: 2.9em;
+  color: #CCDEFF;
+}
+
+/*intro paragraph*/
+p.intro {
+  font-family: 'Roboto', serif;
+  text-align: center;
+  color: #c5bfd0;
+  font-weight: 300;
+}
+
+.intro a {
+  font-family: 'Roboto', sans-serif;
+  color: #c4becf;
+  text-decoration: underline;
+}
+
+.intro a:hover {
+  color: #CCDEFF;
+}
+
+/*credit*/
+#credit {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  color: #a4a6c3;
+  font-size: 13px;
+  border-bottom: solid .3px;
+  padding-bottom: 10px;
+}
+
+/*instructions*/
+#instructions {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  text-align: center;
+  color: #FFC107;
+  font-size: 16px;
+}
+
+/*buttons*/
+#buttons {
+  text-align: center;
+
+}
+
+button {
+
+  font-family: 'Roboto', serif;
+  border: solid 1px rgb(255, 191, 0);
+  border-radius: 4px;
+  margin: 0 15px 10px 0;
+  background-color: rgb(255, 191, 0);
+  color: #31323D;
+  font-weight: 400;
+}
+
+button:hover {
+  background:none;
+  color: rgb(255, 191, 0);
+}
+
+button:focus {
+  background:none;
+  color: rgb(255, 191, 0);
+  outline: none;
+}
+
+/*tabs*/
+.container {
+  margin-top: 10px;
+}
+#libTab a {
+  color: #2F65FF;
+  font-weight: 600;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+}
+
+#consTab a {
+  color: #FF4A2B;
+  font-weight: 600;
+  font-family: 'Libre Baskerville', serif;
+
+  font-size: 12px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+/*map*/
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  color: #c5bfd0;
+}
+
+.mapIntro {
+  font-family: 'Roboto', sans-serif;
+  color: #c5bfd0;
+  font-weight: 300;
+}
+
+#mapFrame {
+  height: 20em;
+}
+
+/*end*/
+.end {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: .3px solid;
+  opacity: .75;
+  font-size: 12px;
+}

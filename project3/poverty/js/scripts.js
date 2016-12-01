@@ -86,11 +86,3 @@ var eduLine = c3.generate({
   },
 
 });
-
-// var mq = window.matchMedia( "(max-width: 500px)" );
-//
-// if (mq.matches) {
-//
-// } else {
-//   // window width is less than 500px
-// }

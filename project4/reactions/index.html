@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Condensed:300|Libre+Baskerville:400,400i,700" rel="stylesheet">
+    <title>Political Voices</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>the Other Side</h1>
+    <p class="intro">
+      The problem is that I don't listen to the other side. I surround myself with people who share my beliefs.
+      I was inspired by the <a href="http://graphics.wsj.com/blue-feed-red-feed/">Wall Street Journal's interactive</a>
+      that revealed just how divided our news intake have become. I created this project to expose us to multiple perspectives.
+      If we take time to listen, maybe "they" won't seem so crazy!
+    </p>
+    <p id="credit">
+      by Ally Levine
+    </p>
+    <p id="instructions">
+      Choose a topic to see both sides.
+    </p>
+    <div id="buttons">
+      <button onclick="allIframe()">All Topics</button>
+      <button onclick="obamaIframe()">OBAMA</button>
+      <button onclick="trumpIframe()">TRUMP</button>
+      <button onclick="econIframe()">ECONOMY</button>
+      <button onclick="immigIframe()">IMMIGRATION</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <ul class="nav nav-tabs" id="myTabs">
+                  <li id="libTab" class="active"><a href="#liberalTab" data-toggle="tab">Liberal Voices</a></li>
+                  <li id="consTab"><a href="#conservativeTab" data-toggle="tab">Conservative Voices</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div class="tab-pane active" id="liberalTab">
+                      <iframe id="liberalFrame" src="php/liberalListTopics.php"></iframe>
+                  </div>
+
+                  <div class="tab-pane" id="conservativeTab">
+                      <iframe id="conservativeFrame" src="php/conservativeListTopics.php"></iframe>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>
+      A Map of Perspectives
+    </h3>
+    <p class="mapIntro">
+      Most of the liberal voices I've included are from D.C., New York City, and California, while those with conservative
+       viewpoints come from all of the United States.
+     </p>
+    <iframe id="mapFrame" src="map/index.html"></iframe>
+    <p class="intro end">
+      Thanks to the 2016 Election, I know I live in a bubble. My friends, family, and professors share
+      identical views on most everything. The drawback is that I started to interpret opinion as truth,
+      making it impossible to consider alternate viewpoints. My intention in this project is to offer
+      a medium where we can see both sides at the same time.
+    </p>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

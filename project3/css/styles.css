@@ -99,7 +99,6 @@ p {
 div h3 {
   font-family: 'LA Web Display Kis Bold', Georgia, serif;
   margin-top: 125px;
-  /*text-align: center;*/
 }
 
 h4 {
@@ -113,21 +112,6 @@ h5 {
   text-transform: uppercase;
 }
 
-/*quotes*/
-#quote {
-  font-family: 'Benton Gothic Bold', Arial, serif;
-  font-size: 25px;
-  margin-top: 120px;
-  text-align: center;
-}
-
-#credit {
-  font-family: 'Benton Gothic Regular', Arial, serif;
-  font-size: 15px;
-  margin-top: -35px;
-  text-align: center;
-}
-
 /*pie charts*/
 .pie-container {
   margin-top: 50px;
@@ -137,15 +121,16 @@ h5 {
  font-family: 'Benton Gothic Regular', Arial, serif;
 }
 
-
-
-
+/*div #pie-charts {
+  border: solid .5px black;
+  max-width: 800px;
+  padding: 20px;
+}*/
 
 /*map*/
 .amcharts-export-menu {
   display: none;
 }
-
 
 
 /*region table*/
@@ -170,8 +155,13 @@ h5 {
   justify-content: center;
 }
 
-
-
+/*education*/
+#quote {
+  font-family: 'Benton Gothic Bold', Arial, serif;
+  font-size: 25px;
+  margin-top: 120px;
+  text-align: center;
+}
 
 /*data table*/
 tbody {
