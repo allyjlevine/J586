@@ -1,8 +1,8 @@
 /*format*/
 body {
   width: 22em;
-  background-color: ;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 iframe {
@@ -12,12 +12,21 @@ iframe {
   width: 100%;
 }
 
+/*header image*/
+img {
+  width: 135px;
+}
 /*headline*/
 h1 {
   font-family: 'Libre Baskerville', serif;
   text-align: center;
   font-size: 2.7em;
-  color: #555;
+  color: #000;
+  margin-top: -10px;
+}
+
+.headInfo {
+  text-align: center;
 }
 
 /*intro paragraph*/
@@ -26,7 +35,7 @@ p.intro {
   text-align: center;
   color: #555;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .intro a {
@@ -46,8 +55,11 @@ p.intro {
   text-align: center;
   color: #555;
   font-size: 13px;
-  border-bottom: solid .3px;
   padding-bottom: 10px;
+}
+
+#credit a {
+  border-bottom: solid .3px;
 }
 
 /*instructions*/
@@ -55,8 +67,8 @@ p.intro {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
   text-align: center;
-  color: #555;
   font-size: 16px;
+  margin-top: 20px;
 }
 
 /*buttons*/
@@ -68,13 +80,10 @@ p.intro {
 button {
 
   font-family: 'Roboto', serif;
-  /*border: solid 1px rgb(255, 191, 0);*/
   border: solid 1px #d3d3d3;
   border-radius: 4px;
   margin: 0 15px 10px 0;
-  /*background-color: rgb(255, 191, 0);*/
   background-color: #fff;
-  color: #555;
   font-weight: 400;
 }
 
@@ -272,6 +281,12 @@ h3 {
   h1 {
     font-size: 4em;
     margin-bottom: 0;
+    margin-top: -14px;
+  }
+
+  img {
+    width: 225px;
+
   }
 
   p.intro {

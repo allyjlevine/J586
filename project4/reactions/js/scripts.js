@@ -8,32 +8,94 @@ $('#tabs').bind('show', function(e) {
     }
 });
 
+
+// changes iframe on click in mobile
 function allIframe(){
-    document.getElementById("liberalFrame").src='php/liberalListTopics.php';
-    document.getElementById("conservativeFrame").src='php/conservativeListTopics.php';
+    var mq = window.matchMedia( "(max-width: 616px)" );
+    if (mq.matches) {
+        document.getElementById("liberalFrame").src='php/liberalListTopics.php';
+        document.getElementById("conservativeFrame").src='php/conservativeListTopics.php';
+    }
+    else {
+        document.getElementById("liberalWindow").src='php/liberalListTopics.php';
+        document.getElementById("conservativeWindow").src='php/conservativeListTopics.php';
+    }
+
 }
 
 function obamaIframe(){
-    document.getElementById("liberalFrame").src='php/topics/obamaLiberal.php';
-    document.getElementById("conservativeFrame").src='php/topics/obamaConservative.php';
+    var mq = window.matchMedia( "(max-width: 616px)" );
+    if (mq.matches) {
+        document.getElementById("liberalFrame").src='php/topics/obamaLiberal.php';
+        document.getElementById("conservativeFrame").src='php/topics/obamaConservative.php';
+    }
+    else {
+      document.getElementById("liberalWindow").src='php/topics/obamaLiberal.php';
+      document.getElementById("conservativeWindow").src='php/topics/obamaConservative.php';
+    }
 }
+
 
 function trumpIframe(){
-    document.getElementById("liberalFrame").src='php/topics/trumpLiberal.php';
-    document.getElementById("conservativeFrame").src='php/topics/trumpConservative.php';
+    var mq = window.matchMedia( "(max-width: 616px)" );
+    if (mq.matches) {
+        document.getElementById("liberalFrame").src='php/topics/trumpLiberal.php';
+        document.getElementById("conservativeFrame").src='php/topics/trumpConservative.php';
+    }
+    else {
+        document.getElementById("liberalWindow").src='php/topics/trumpLiberal.php';
+        document.getElementById("conservativeWindow").src='php/topics/trumpConservative.php';
+    }
 }
 
-// function gunsIframe(){
-//     document.getElementById("liberalFrame").src='php/topics/gunsLiberal.php';
-//     document.getElementById("conservativeFrame").src='php/topics/gunsConservative.php';
-// }
-
 function econIframe(){
-    document.getElementById("liberalFrame").src='php/topics/econLiberal.php';
-    document.getElementById("conservativeFrame").src='php/topics/econConservative.php';
+    var mq = window.matchMedia( "(max-width: 616px)" );
+    if (mq.matches) {
+        document.getElementById("liberalFrame").src='php/topics/econLiberal.php';
+        document.getElementById("conservativeFrame").src='php/topics/econConservative.php';
+    }
+    else {
+        document.getElementById("liberalWindow").src='php/topics/econLiberal.php';
+        document.getElementById("conservativeWindow").src='php/topics/econConservative.php';
+    }
 }
 
 function immigIframe(){
-    document.getElementById("liberalFrame").src='php/topics/immigLiberal.php';
-    document.getElementById("conservativeFrame").src='php/topics/immigConservative.php';
-}
+    var mq = window.matchMedia( "(max-width: 616px)" );
+    if (mq.matches) {
+        document.getElementById("liberalFrame").src='php/topics/immigLiberal.php';
+        document.getElementById("conservativeFrame").src='php/topics/immigConservative.php';
+    }
+    else {
+      document.getElementById("liberalWindow").src='php/topics/immigLiberal.php';
+      document.getElementById("conservativeWindow").src='php/topics/immigConservative.php';
+    }
+} // end of mobile
+
+
+
+//changes iframe on click in desktop
+// function allIframe(){
+//     document.getElementById("liberalWindow").src='php/liberalListTopics.php';
+//     document.getElementById("conservativeWindow").src='php/conservativeListTopics.php';
+// }
+
+// function obamaIframe(){
+//     document.getElementById("liberalWindow").src='php/topics/obamaLiberal.php';
+//     document.getElementById("conservativeWindow").src='php/topics/obamaConservative.php';
+// }
+
+// function trumpIframe(){
+//     document.getElementById("liberalWindow").src='php/topics/trumpLiberal.php';
+//     document.getElementById("conservativeWindow").src='php/topics/trumpConservative.php';
+// }
+
+// function econIframe(){
+//     document.getElementById("liberalWindow").src='php/topics/econLiberal.php';
+//     document.getElementById("conservativeWindow").src='php/topics/econConservative.php';
+// }
+
+// function immigIframe(){
+//     document.getElementById("liberalWindow").src='php/topics/immigLiberal.php';
+//     document.getElementById("conservativeWindow").src='php/topics/immigConservative.php';
+// }
